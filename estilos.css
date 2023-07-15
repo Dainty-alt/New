@@ -1,0 +1,81 @@
+
+
+h1{text-align: center;}
+body{margin: 0; font-family: sans-serif;}
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+h1{font-size: 3.5em;}
+h2{font-size: 2.6em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+.container{max-width: 1400px; margin: auto;}
+.colorl{color:chartreuse;}
+header{background-color: whitesmoke;}
+header .logo{margin: 0; padding: 25px 30px; font-weight: bold; color: green; font-size: 1.55em;}
+header .container{display: flex; flex-direction: column; align-items: center;}
+header nav{display: flex; flex-direction: column; text-align: center; padding-bottom: 25px; }
+header a{padding: 5px 12px; text-decoration: none; font-weight: bold; color: black;}
+header a:hover{color: green;}
+#hero{display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; height: 90vh; 
+color: white; background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)   )
+,url(basura.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; }
+
+#info{ }
+#info .container{ text-align: center; padding: 200px 12px; }
+#actividades{ color: white; background-color: seagreen; text-align: center;}
+#actividades .container{padding: 150px 12px;}
+#actividades p{ display: none;}
+#actividades h2{margin-top: 0; font-size: 3.2em;}
+#actividades .carta{ padding: 50px; margin: 30px; border-radius: 15px;
+
+}
+.carta:first-child{ background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)   ) ,url(comida.jpg); 
+    background-position: center center; background-size: cover;
+
+}
+.carta:nth-child(2){background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)   ) ,url(juegos.jpg);
+    background-position: center center; background-size: cover;
+
+}
+.carta:last-child{  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)   ) ,url(bingo.jpg);
+    background-position: center center; background-size: cover;
+
+}
+
+#masinfo{}
+#masinfo .container{ text-align: center; padding: 200px 12px;}
+
+#final {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; height: 80vh; background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)   )
+    ,url(Reciclar.jpg) ;background-repeat: no-repeat; background-size: cover; background-position: center center;
+}
+
+footer .container{ height: 150px; display: flex; justify-content: center; align-items:flex-end;
+
+}
+
+footer p{ margin: 0; color:dimgray; padding: 12px;} 
+
+@media (min-width:720px){
+    #hero h1{font-size: 5em;}
+    header{ position: fixed; width: 100%;}
+header .container{flex-direction: row; justify-content: space-between;}
+header nav{flex-direction: row; padding-bottom: 0; padding-right: 20px;}
+
+#info .container{display: flex; justify-content: space-evenly;}
+#info .infoimg{ background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)   )
+    ,url(planta.jpg); background-size: cover; background-position: center center; height: 500px; width: 400px;
+
+}
+
+#info .texto{width: 50%; text-align: initial; padding: 0px 30px; max-width: 600px; display: flex; justify-content: center; flex-direction: column; padding-left: 30px;}
+
+#info h2{margin-top: 0;}
+
+#actividades .act{display: flex; justify-content: center;}
+#actividades p{display: block; margin-bottom: 30; }
+#actividades .carta{padding: 15px;}
+#actividades h3{margin-top: 0;}
+
+#masinfo .container{  display: flex; justify-content: space-evenly;          }
+}
+
